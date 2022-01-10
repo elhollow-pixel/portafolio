@@ -2,7 +2,7 @@
     session_start();
     if($_POST){
         $usuario = $_POST['usuario'];
-        if( ($_POST['usuario']=="hector") && ($_POST['contrasenia']=="123") ){
+        if( ($_POST['usuario']=="prueba") && ($_POST['contrasenia']=="123") ){
             $_SESSION['usuario']=$usuario;
             //redirecion
             header("location:index.php");
@@ -50,7 +50,7 @@
                             </form>
                         </div>
                         <div class="card-footer text-muted">
-                        
+                            <span>User: prueba - Pass:123</span>
                         </div>
                     </div>
 
